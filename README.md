@@ -28,6 +28,26 @@ This project implements an automated procurement system using CrewAI's multi-age
 - **Web APIs** - SerperDev for web search, ScrapeGraph AI for web scraping.
 - **HTML and Bootstrap** - Professional report generation and styling.
 
+### Agent Architecture
+
+**1. Search Queries Recommendation Agent**
+**Role:** Generates varied search queries involving brands, types, and technologies.
+**Output:** Structured search queries targeting specific e-commerce sites.
+
+**2. Search Engine Agent**
+**Role:** Executes web searches using generated queries.
+**Tools:** SerperDevTool for comprehensive web searching.
+**Output:** Filtered search results with confidence scoring and relevance analysis.
+
+**3. Web Scraping Agent**
+**Role:** Extracts detailed product information from e-commerce pages.
+**Tools:** Custom web scraping tool using ScrapeGraph AI.
+**Output:** Structured product data with prices, specifications, and features.
+
+**4. Procurement Report Author Agent**
+**Role:** Generates professional HTML procurement reports with analysis and recommendations.
+**Output:** Bootstrap-styled HTML report with executive summary and insights.
+
 
 ### Installation and Setup
 
@@ -37,30 +57,20 @@ This project implements an automated procurement system using CrewAI's multi-age
 ```python
    OPENAI_API_KEY=your_openai_api_key
    SERPER_API_KEY=your_serper_api_key
+   SGAI_API_KEY=your_scrapegraph_ai_api_key
+   AGENTOPS_API_KEY=your_agentops_api_key
 ```
 4. Open the Jupyter Notebook and set your model.
-5. Customize the event details and then run the cells:
-
- ```python
-event_details = {
-    'event_topic': "Your Event Name",
-    'event_city': "City, State",
-    'tentative_date': "YYYY-MM-DD",
-    'expected_participants': 100,
-    'budget': 50000,
-    'preferences': "your preferences here",
-    'audience': "target audience description",
-    'venue_type': "Venue Type"
-}
-```
+5. Customize the search parameters and then run the cells:
 
 ### Output Files
 
-The project generates three files:
+The project generates foure files:
 
-- `venue_details.json` – Structured venue information. 
-- `marketing_report.md` – Marketing strategy and outreach plan.  
-- `risk_compliance_checklist.md` – Safety, risk assessmment and compliance chechlist.
+- `step_1_suggested_search_queries.json` – Suggested search queries. 
+- `step_2_search_results.json` – Curated search results.  
+- `step_3_extracted_products.json` – Extracted product details with analysis.
+- `step_4_procurement_report.html` - Professional procurement report.
 
 ###  Acknowledgments
 
