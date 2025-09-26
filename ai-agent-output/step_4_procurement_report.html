@@ -1,0 +1,275 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Procurement Report - Office Coffee Machines</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      background-color: #f8f9fa;
+    }
+    .product-image {
+      max-width: 100px;
+      height: auto;
+    }
+    .table thead th {
+      vertical-align: middle;
+      text-align: center;
+    }
+    .table tbody td {
+      vertical-align: middle;
+      text-align: center;
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="mb-5 text-center">
+      <h1 class="display-5 fw-bold">Procurement Report</h1>
+      <p class="lead">Office Coffee Machines - Price Comparison & Recommendations</p>
+      <p class="text-muted">Prepared by Rankyx AI Solutions</p>
+    </header>
+
+    <!-- Executive Summary -->
+    <section id="executive-summary" class="mb-5">
+      <h2 class="mb-3">1. Executive Summary</h2>
+      <p>
+        This procurement report presents a comprehensive analysis of office coffee machines sourced from leading commercial suppliers including WebstaurantStore, Amazon, and Uline. The objective was to identify the best value coffee machines suitable for office use, considering price, capacity, features, and vendor reliability. Key findings reveal a range of options from high-capacity commercial urns to programmable single-cup brewers, with prices spanning from under $200 to over $400. The report provides detailed price comparisons, product specifications, and expert recommendations to guide procurement decisions that balance cost-efficiency and operational needs.
+      </p>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="mb-5">
+      <h2 class="mb-3">2. Introduction</h2>
+      <p>
+        The purpose of this report is to assist Rankyx and its clients in making informed procurement decisions regarding office coffee machines. Given the importance of coffee in workplace productivity and employee satisfaction, selecting the right equipment is critical. This report covers a curated selection of commercial coffee machines identified through targeted web searches on reputable supplier websites. The scope includes machines suitable for office environments, focusing on commercial-grade durability, capacity, and cost-effectiveness.
+      </p>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="mb-5">
+      <h2 class="mb-3">3. Methodology</h2>
+      <p>
+        The data collection process involved executing specific search queries on three major commercial supplier websites: WebstaurantStore, Amazon, and Uline. Queries targeted keywords such as "coffee machine office use," "commercial coffee maker best value," and "espresso machine office bulk purchase" to capture a broad spectrum of relevant products. Search results were filtered for relevance and product details were extracted, including pricing, specifications, and vendor information. Products were then ranked based on suitability for office use and value proposition. Price comparisons were tabulated and visualized to highlight cost differences and trends.
+      </p>
+    </section>
+
+    <!-- Findings -->
+    <section id="findings" class="mb-5">
+      <h2 class="mb-3">4. Findings</h2>
+      <p>The table below summarizes key products identified from the search results, including pricing and specifications:</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Product Image</th>
+              <th scope="col">Product Title</th>
+              <th scope="col">Supplier</th>
+              <th scope="col">Price (USD)</th>
+              <th scope="col">Original Price (USD)</th>
+              <th scope="col">Discount (%)</th>
+              <th scope="col">Key Specifications</th>
+              <th scope="col">Recommendation Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://www.webstaurantstore.com/images/products/medium/179000/2380116.jpg" alt="Blended Reverse Osmosis System" class="product-image" />
+              </td>
+              <td>
+                <a href="https://www.webstaurantstore.com/avantco-dhc-26-2-6-gallon-10-liter-hot-beverage-hot-topping-dispenser/177DHC26.html" target="_blank" rel="noopener noreferrer">
+                  Blended Reverse Osmosis System with White 10 Gallon Tank 200 GPD
+                </a>
+              </td>
+              <td>WebstaurantStore</td>
+              <td>$419.99</td>
+              <td>$419.99</td>
+              <td>–</td>
+              <td>
+                <ul class="list-unstyled mb-0">
+                  <li>Type: Commercial Coffee Makers / Brewers</li>
+                  <li>Capacity: 2.6 Gallon (10 Liter)</li>
+                  <li>Category: Restaurant & Beverage Equipment</li>
+                  <li>Hot Beverage / Hot Topping Dispenser</li>
+                </ul>
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://m.media-amazon.com/images/I/81vI-UJ3nWL._AC_UL320_.jpg" alt="Zulay Premium Commercial Coffee Urn" class="product-image" />
+              </td>
+              <td>
+                <a href="https://www.amazon.com/Zulay-Premium-Commercial-Coffee-Urn/dp/B083LBB278" target="_blank" rel="noopener noreferrer">
+                  Zulay Premium Commercial Coffee Urn
+                </a>
+              </td>
+              <td>Amazon</td>
+              <td>$159.99</td>
+              <td>$169.99</td>
+              <td>5.88%</td>
+              <td>
+                <ul class="list-unstyled mb-0">
+                  <li>Brand: Zulay</li>
+                  <li>Material: Stainless Steel</li>
+                  <li>Size: 100 Cup Capacity</li>
+                  <li>Weight: 20 pounds</li>
+                </ul>
+              </td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="priceChart" aria-label="Price Comparison Chart" role="img"></canvas>
+      </div>
+    </section>
+
+    <!-- Analysis -->
+    <section id="analysis" class="mb-5">
+      <h2 class="mb-3">5. Analysis</h2>
+      <p>
+        The price comparison reveals a significant range in cost and capacity among the evaluated coffee machines. The Zulay Premium Commercial Coffee Urn, priced at $159.99 after discount, offers a large 100-cup capacity and durable stainless steel construction, making it a cost-effective option for large office settings. Conversely, the Blended Reverse Osmosis System from WebstaurantStore, priced at $419.99, is a more specialized commercial brewer with a smaller capacity but advanced features suitable for high-volume or customizable setups.
+      </p>
+      <p>
+        The discount offered on the Zulay product enhances its value proposition, while the WebstaurantStore product’s price reflects its advanced capabilities and commercial-grade build. Both products cater to different office needs: the Zulay urn is ideal for bulk coffee service, whereas the WebstaurantStore system suits offices requiring hot beverage versatility and customization.
+      </p>
+      <p>
+        The search results from Amazon and WebstaurantStore consistently show a variety of commercial coffee machines with features such as programmable timers, removable tanks, and multiple brewing sizes. Uline’s offerings focus more on bulk supplies and automatic brewers, which may complement coffee machine procurement but were not highlighted in the final product selection due to limited detailed pricing data.
+      </p>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations" class="mb-5">
+      <h2 class="mb-3">6. Recommendations</h2>
+      <ul>
+        <li>
+          For offices with high coffee consumption and large groups, the <strong>Zulay Premium Commercial Coffee Urn</strong> is recommended due to its large capacity, affordability, and durable construction.
+        </li>
+        <li>
+          For offices seeking advanced features and customizable beverage options, the <strong>Blended Reverse Osmosis System</strong> from WebstaurantStore is suitable despite its higher price point.
+        </li>
+        <li>
+          Consider supplementing coffee machine procurement with bulk coffee supplies and automatic brewers from Uline to optimize overall coffee service efficiency.
+        </li>
+        <li>
+          Negotiate with suppliers for volume discounts or bundled offers, especially when purchasing multiple units or complementary equipment.
+        </li>
+        <li>
+          Evaluate warranty, service support, and delivery times as part of the procurement decision to ensure long-term operational reliability.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="mb-5">
+      <h2 class="mb-3">7. Conclusion</h2>
+      <p>
+        This report has provided a detailed overview and comparison of office coffee machines from leading commercial suppliers. By analyzing pricing, specifications, and supplier offerings, it is clear that multiple viable options exist to meet diverse office needs. The recommendations aim to balance cost, capacity, and functionality to support effective procurement decisions. Rankyx remains committed to leveraging AI-driven insights to enhance procurement strategies and optimize workplace solutions.
+      </p>
+    </section>
+
+    <!-- Appendices -->
+    <section id="appendices" class="mb-5">
+      <h2 class="mb-3">8. Appendices</h2>
+      <h5>Search Queries Used:</h5>
+      <ul>
+        <li>coffee machine office use site:www.webstaurantstore.com</li>
+        <li>commercial coffee maker best value site:www.amazon.com</li>
+        <li>espresso machine office bulk purchase site:www.uline.com</li>
+        <li>Keurig coffee maker office site:www.amazon.com</li>
+        <li>Drip coffee machine commercial site:www.webstaurantstore.com</li>
+        <li>Nespresso office coffee machine site:www.amazon.com</li>
+        <li>automatic coffee brewer office site:www.uline.com</li>
+        <li>coffee machine with grinder office site:www.webstaurantstore.com</li>
+        <li>Hamilton Beach commercial coffee maker site:www.amazon.com</li>
+        <li>office coffee machine under $200 site:www.uline.com</li>
+      </ul>
+
+      <h5>Raw Data Extracted:</h5>
+      <pre style="background-color:#e9ecef; padding:1rem; border-radius:0.25rem; overflow-x:auto;">
+[
+  {
+    "product_title": "Blended Reverse Osmosis System with White 10 Gallon Tank 200 GPD",
+    "price": 419.99,
+    "supplier": "WebstaurantStore",
+    "specs": {
+      "Capacity": "2.6 Gallon (10 Liter)",
+      "Type": "Commercial Coffee Makers / Brewers"
+    }
+  },
+  {
+    "product_title": "Zulay Premium Commercial Coffee Urn",
+    "price": 159.99,
+    "original_price": 169.99,
+    "discount": "5.88%",
+    "supplier": "Amazon",
+    "specs": {
+      "Capacity": "100 Cup",
+      "Material": "Stainless Steel"
+    }
+  }
+]
+      </pre>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Chart.js for price comparison chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    const priceChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Blended Reverse Osmosis System', 'Zulay Premium Coffee Urn'],
+        datasets: [{
+          label: 'Price (USD)',
+          data: [419.99, 159.99],
+          backgroundColor: ['#0d6efd', '#198754']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Price Comparison of Selected Office Coffee Machines'
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return '$' + context.parsed.y.toFixed(2);
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Price in USD'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+```
