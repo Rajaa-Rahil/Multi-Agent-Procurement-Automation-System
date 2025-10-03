@@ -17,7 +17,7 @@ This project implements an automated procurement system using CrewAI's multi-age
 - **Structured Data Processing:** Robust Pydantic models that keep all the information consistent and easy to work with.
 - **Extensible Design:** This approach works great whethwer you are shopping for office supplies, industrial equipment, or anything else you need to source online.
 
-  ### Technologies Used
+  ### Requirements
 
 - **Python 3.11** - Core programming language.
 - **Jupyter Notebook/JupyterLab** - The environment of development and execution.
