@@ -61,7 +61,7 @@ This project implements an automated procurement system using CrewAI's multi-age
    AGENTOPS_API_KEY=your_agentops_api_key
 ```
 4. Open the Jupyter Notebook and set your model.
-5. Customize the search parameters and then run the cells:
+5. Customize the search parameters and then run the cells.
 
 ### Output Files
 
